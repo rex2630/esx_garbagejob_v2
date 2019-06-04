@@ -3,15 +3,9 @@ the original author's script with 10% my addition to make players get out and co
 
 The original creator is listed on the copy that I recieved are:
 
---------------------------------------------------------------------------------
 
 -- ORIGINAL SCRIPT BY Marcio FOR CFX-ESX
 
--- Script serveur No Brain
-
--- www.nobrain.org
-
---------------------------------------------------------------------------------
 
 Changes to the script:
 
@@ -21,6 +15,13 @@ Changes to the script:
 * added: check for last job to keep from getting sent to the same job over and over.
 
 
--- Requires
+-- Requires--
 
 ESX_Jobs
+
+  
+-- Install --
+  
+  Import garbagejob_v2.sql if you do not already have the garbagejob on your server for work clothes settings.
+  add esx_garbagejob_v2 to your resource folder
+  start esx_garbagejob_v2 in your server.fg
