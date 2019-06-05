@@ -80,12 +80,12 @@ local CurrentActionData       = {}
 
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function(xPlayer)
-    PlayerData = xPlayer
+    ESX.PlayerData = xPlayer
 end)
 
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob', function(job)
-	PlayerData.job = job
+	ESX.PlayerData.job = job
 end)
 
 -- MENUS --
@@ -208,9 +208,9 @@ function IsATruck()
 end
 
 function IsJobgarbage()
-	if PlayerData ~= nil then
+	if ESX.PlayerData ~= nil then
 		local isJobgarbage = false
-		if PlayerData.job.name ~= nil and PlayerData.job.name == 'garbage' then
+		if ESX.PlayerData.job.name ~= nil and ESX.PlayerData.job.name == 'garbage' then
 			isJobgarbage = true
 		end
 		return isJobgarbage
