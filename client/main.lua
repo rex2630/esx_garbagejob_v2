@@ -50,7 +50,7 @@ end)
 
 
 local trashcollectionpos = nil
-local namezone = "Abholung"
+local namezone = " Pick-up"
 local namezonenum = 0
 local namezoneregion = 0
 local MissionRegion = 0
